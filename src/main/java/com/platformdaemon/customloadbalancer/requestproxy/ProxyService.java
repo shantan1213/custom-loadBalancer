@@ -17,8 +17,11 @@ public class ProxyService {
         return response.getBody();
     }
 
-    public ResponseEntity<JsonNode> forwardCreateToRf(JsonNode requestBody) {
-        ResponseEntity<JsonNode> response = requestForwarder.forwardCreate(requestBody);
-        return ResponseEntity.status(response.getStatusCode()).body(response.getBody());
+    public ResponseEntity<byte[]> forwardCreateToRf(JsonNode requestBody) {
+        return requestForwarder.forwardCreate(requestBody);
+    }
+
+    public ResponseEntity<byte[]> forwardUpdateToRf(Long id, JsonNode requestBody) {
+        return requestForwarder.forwardUpdate(id, requestBody);
     }
 }
