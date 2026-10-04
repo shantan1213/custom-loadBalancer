@@ -1,0 +1,11 @@
+title: Building a Custom Spring Boot Load Balancer
+description: A hands-on development journal for a Spring Boot load balancer and its backend services.
+url: https://shantan1213.github.io
+baseurl: /custom-loadBalancer
+theme: minima
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+header_pages:
+  - index.md
