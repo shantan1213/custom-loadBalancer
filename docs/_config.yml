@@ -7,5 +7,4 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-header_pages:
-  - blog/index.md
+header_pages: []
